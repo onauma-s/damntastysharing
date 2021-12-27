@@ -47,8 +47,8 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navBar">
                             <ul class="navbar-nav">
-                                <li class="nav-item active"><a class="nav-link text-primary" href="#"> Home</a>
-                                <li class="nav-item"><a class="nav-link" href="foodcategory.html"> Food Category</a>
+                                <li class="nav-item active"><a class="nav-link" href="index.html"> Home</a>
+                                <li class="nav-item active"><a class="nav-link text-primary" href="#"> Food Category</a>
                                 <li class="nav-item"><a class="nav-link" href="#"> About Us</a>
                             </ul>
                             <span class="navbar-text ml-auto">
@@ -62,8 +62,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <h1>Let's share the best restarunt</h1>
-                            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+                            <h1>FOOD CATEGORIES</h1>
+                            <p>Let's share the best restarunt</p>
                         </div>
                     </div>
                 </div>
@@ -76,87 +76,52 @@
                 </div>
             </div>
     
-            <!--Container Top Weekly-->
+            <!--Container Search session-->
             <div class="container-fluid bg-white">
-                <div class="row">
-                    <div class="col mb-3 mt-3">
-                        <h4>Weekly Top Tasty Highlights</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12" >
-                        <div class="carousel slide" datda-ride="carousel" id="weeklyCarousel">
-                            <div class="carousel-inner" >
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-4 col-md-4 mb-3">
-                                            <div class="card">
-                                                <img src="img/gray.jpeg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Card title</h5>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 col-md-4 mb-3">
-                                            <div class="card">
-                                                <img src="img/gray.jpeg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Card title</h5>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class=" col-4 col-md-4 mb-3">
-                                            <div class="card">
-                                                <img src="img/gray.jpeg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Card title</h5>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                    <div class="row">
+                        <div class="col-auto mt-3 ml-5 mr-5">
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-4 col-md-4 mb-3">
-                                            <div class="card">
-                                                <img src="img/gray.jpeg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Card title</h5>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4 col-md-4 mb-3">
-                                            <div class="card">
-                                                <img src="img/gray.jpeg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Card title</h5>
-                                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <input class="form-control" type="search" placeholder="Search" />
                             </div>
                         </div>
-                    </div>      
-                </div>
-                <div class="col text-center">
-                    <a class="btn btn-primary mb-3 mr-1" href="#weeklyCarousel" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
-                    </a>
-                    <a class="btn btn-primary mb-3 " href="#weeklyCarousel" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-3 mt-3 text-center">
+                            <h5>Choose type of food..</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle mb-3" type="button" id="typeFood" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Select...
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="typeFood">
+                              <a class="dropdown-item" href="#">American</a>
+                              <a class="dropdown-item" href="#">Chinese</a>
+                              <a class="dropdown-item" href="#">Cuban</a>
+                              <a class="dropdown-item" href="#">Ethiopian</a>
+                              <a class="dropdown-item" href="#">Filipino</a>
+                              <a class="dropdown-item" href="#">French</a>
+                              <a class="dropdown-item" href="#">Greek</a>
+                              <a class="dropdown-item" href="#">German</a>
+                              <a class="dropdown-item" href="#">Italian</a>
+                              <a class="dropdown-item" href="#">Indian</a>
+                              <a class="dropdown-item" href="#">Japanese</a>
+                              <a class="dropdown-item" href="#">Korean</a>
+                              <a class="dropdown-item" href="#">Mexican</a>
+                              <a class="dropdown-item" href="#">Mediterranean</a>
+                              <a class="dropdown-item" href="#">Malaysian</a>
+                              <a class="dropdown-item" href="#">Russian</a>
+                              <a class="dropdown-item" href="#">Thai</a>
+                              <a class="dropdown-item" href="#">Vietnamese</a>
+                            </div>
+                          </div>
+                    </div>
             </div>
         </div>    
         
