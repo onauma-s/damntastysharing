@@ -23,4 +23,28 @@ h5 {
     box-shadow: 2px 3px rgba(0, 0, 0, 0.1);
 }
 
+#outerContainerBody {
+    position: relative;
+}
+
+#containerAboutus{
+    height: 150px;
+}
+
+#containerFrame {
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    width: 600px;
+    z-index: 1;
+}
+
+#containerBody {
+    height: 600px;
+    background-color: white;
+}
+
+#containerContent {
+    background-color: #EF962B;
+}
 
