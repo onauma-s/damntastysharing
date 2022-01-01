@@ -48,3 +48,20 @@ h5 {
     background-color: #EF962B;
 }
 
+/*Add Content Page*/
+#photoBox {
+    border: dashed;
+    border-width: 0.7px;
+    border-color: gray;
+    padding: 15px 25px;
+}
+
+/*View Content Page*/
+#containerHeader {
+    height: 150px;
+}
+
+#bodyContent, p {
+    color: black;
+    text-shadow: none;
+}
