@@ -63,7 +63,7 @@
                     <div class="row">
                         <div class="col">
                             <h1>Damn-Tasty Sharing</h1>
-                            <p>Let's share the best restarunt</p>
+                            <p class="text-center">Let's share the best restarunt</p>
                         </div>
                     </div>
                 </div>
@@ -78,24 +78,31 @@
                 <!-- Content Body-->
                 <div class="container" id="bodyContent">
                     <div class="row">
-                        <div class="col col-sm-8 col-md-8 col-xl-8 bg-white mb-5">
+                        <div class="col bg-white mb-5">
                             <div class="container bg-white">
                                 <div class="row">
                                     <div class="col text-center my-2">
-                                        <img src="/img/gray.jpeg" style="height: 150px;" />
+                                        <img src="/img/Woodencity.jpg" style="height: 250px; width: 100%;" />
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm col-xl-6">
-                                        <h4>The name of restarunt</h4>
+                                        <h4>Wooden City Tacoma</h4>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col col-sm-2 col-md-1 col-lg-1 col-xl-1">
-                                        <img src="/img/gray.jpeg" style="width: 34px; border-radius: 50%;" />
+                                    <div class="col col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                                        <img src="/img/pexample.png" style="width: 34px; border-radius: 50%;" />
                                     </div>
-                                    <div class="col col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                                    <div class="col col-sm-4 col-md-4 col-lg-4 col-xl-3">
                                         <p class="text-secondary">written by Puchii</p>
+                                    </div>
+                                    <div class="col text-right">
+                                        <span class="fa fa-star" id="star1" onclick="addStar(this,1)"></span>
+                                        <span class="fa fa-star" id="star2" onclick="addStar(this,2)"></span>
+                                        <span class="fa fa-star" id="star3" onclick="addStar(this,3)"></span>
+                                        <span class="fa fa-star" id="star4" onclick="addStar(this,4)"></span>
+                                        <span class="fa fa-star" id="star5" onclick="addStar(this,5)"></span>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -116,7 +123,11 @@
                                             </div>
                                             <div>
                                                 <label for="inputRating">Rating : </label>
-                                                <b-form-rating id="inputRating" inline value="5"></b-form-rating>
+                                                <span class="fa fa-star" id="star1" onclick="addStar(this,1)"></span>
+                                                <span class="fa fa-star" id="star2" onclick="addStar(this,2)"></span>
+                                                <span class="fa fa-star" id="star3" onclick="addStar(this,3)"></span>
+                                                <span class="fa fa-star" id="star4" onclick="addStar(this,4)"></span>
+                                                <span class="fa fa-star" id="star5" onclick="addStar(this,5)"></span>
                                             </div>
                                             <div class="text-center">
                                                 <button type="button" class="btn btn-primary">POST</button>
@@ -125,31 +136,64 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="container my-2">
+                            <div class="container-fluid bg-white my-2">
                                 <div class="row">
                                     <div class="col">
-                                        <p> Comment Boxes</p>
+                                        <div class="container" id="commentBox">
+                                            <div class="row">
+                                                <div class="col-1 py-2">
+                                                    <img src="/img/pexample.png" style="width: 34px; border-radius: 50%;" />
+                                                </div>
+                                                <div class="col-4 py-2">
+                                                    <p class="text-secondary">written by Puchii</p>
+                                                </div>
+                                                <div class="col text-right py-2">
+                                                    <span class="fa fa-star" id="star1" onclick="addStar(this,1)"></span>
+                                                    <span class="fa fa-star" id="star2" onclick="addStar(this,2)"></span>
+                                                    <span class="fa fa-star" id="star3" onclick="addStar(this,3)"></span>
+                                                    <span class="fa fa-star" id="star4" onclick="addStar(this,4)"></span>
+                                                    <span class="fa fa-star" id="star5" onclick="addStar(this,5)"></span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col bg-secondary mb-5">
-                            <div class="container mx-auto my-3">
+                        <div class="col-sm-12 col-md-5 bg-white mb-5" id="mapBox">
+                            <div class="container-fluid bg-white mx-auto my-3">
                                 <div class="row">
-                                    <div class="col bg-primary">
-                                        <p>Map Box</p>
+                                    <div class="col text-center px-0 py-0">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2707.9467125124525!2d-122.44185838450477!3d47.256745279162985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54905508892589e5%3A0xab7a2105b6003ec2!2sWooden%20City%20Tacoma!5e0!3m2!1sen!2sus!4v1641169845826!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col bg-white">
-                                        <p>Information Box</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="container bg-white mb-3">
                                 <div class="row">
                                     <div class="col">
-                                        <p>Commemt Status Box</p>
+                                        <h6>Address : </h6>
+                                    </div>
+                                    <div class="col-9 lg-6 xl-4">
+                                        <p>714 Pacific Ave, Tacoma, WA 98402</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>Phone : </h6>
+                                    </div>
+                                    <div class="col-9 lg-6 xl-4">
+                                        <p>+12535030762</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>Website : </h6>
+                                    </div>
+                                    <div class="col-9 lg-6 xl-4">
+                                        <p>http://woodencitytacoma.com/</p>
                                     </div>
                                 </div>
                             </div>
@@ -157,10 +201,6 @@
                     </div>
                 </div>
             </div>
-    
-          
-
-       
 
         <footer>
             <div class="container-fluid">
@@ -187,6 +227,23 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script>
+            //rating star
+            function addStar(ths,sno){
+              for (var i = 1; i <= 5; i++){
+                var cur = document.getElementById("star" + i)
+                cur.className="fa fa-star"
+              }
+              for (var i = 1; i <= sno; i++){
+                var cur = document.getElementById("star"+i)
+                if(cur.className == "fa fa-star")
+                {
+                  cur.className = "fa fa-star checked"
+                }
+              }
+            }
+        </script>
 
     </body>
 </html>

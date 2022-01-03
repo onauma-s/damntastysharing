@@ -99,8 +99,12 @@
                       <input type="text" class="form-control" id="inputLinkWebsite" placeholder="Link url">
                     </div>
                     <div>
-                      <label for="inputRating">Rating : </label>
-                      <b-form-rating id="inputRating" inline value="5"></b-form-rating>
+                      <label class="pr-5 mr-5" for="inputRating">Rating : </label>
+                        <span class="fa fa-star" id="star1" onclick="addStar(this,1)"></span>
+                        <span class="fa fa-star" id="star2" onclick="addStar(this,2)"></span>
+                        <span class="fa fa-star" id="star3" onclick="addStar(this,3)"></span>
+                        <span class="fa fa-star" id="star4" onclick="addStar(this,4)"></span>
+                        <span class="fa fa-star" id="star5" onclick="addStar(this,5)"></span>
                     </div>
                     <div class="form-group">
                         <div class="container bg-white">
@@ -141,6 +145,22 @@
             /*$(document).ready(function() {
               $('#inputRating').mdbRate();
             }); */
+
+            //rating star
+            function addStar(ths,sno){
+              for (var i = 1; i <= 5; i++){
+                var cur = document.getElementById("star" + i)
+                cur.className="fa fa-star"
+              }
+              for (var i = 1; i <= sno; i++){
+                var cur = document.getElementById("star"+i)
+                if(cur.className == "fa fa-star")
+                {
+                  cur.className = "fa fa-star checked"
+                }
+              }
+            }
+
 
         </script>
 
