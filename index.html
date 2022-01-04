@@ -70,11 +70,118 @@
                 <div class="container">
                     <div class="row">
                         <div class="col text-center mb-3">
-                            <a class="btn btn-dark btn-lg" href="test.html" role="button" id="btn-share">Share</a>
+                            <button type="button" class="btn btn-dark px-5 py-3" data-toggle="modal" data-target="#createContent" id="shareBtn">Share</button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Create Content Form -->
+            <div id="createContent" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Create your content</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="inputTitle">Title * : </label>
+                          <input type="text" class="form-control" id="inputTitle" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputPostContent">Post Content * : </label>
+                          <textarea class="form-control" type="text" id="inputPostContent" rows="10" placeholder="Write your content"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="selectFoodType">Food Category * : </label>
+                          <select class="form-control" id="selectFoodType" aria-placeholder="Select food category">
+                            <option>American</option>
+                            <option>Chinese</option>
+                            <option>Cuban</option>
+                            <option>Ethiopian</option>
+                            <option>Filipino</option>
+                            <option>French</option>
+                            <option>Greek</option>
+                            <option>German</option>
+                            <option>Italian</option>
+                            <option>Indian</option>
+                            <option>Japanese</option>
+                            <option>Korean</option>
+                            <option>Mexican</option>
+                            <option>Mediterranean</option>
+                            <option>Malaysian</option>
+                            <option>Russian</option>
+                            <option>Thai</option>
+                            <option>Vietnamese</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress1">Address Line 1 * : </label>
+                          <input type="text" class="form-control" id="inputAddress1" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">Address Line 2 : </label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputCity">City * : </label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputState">State</label>
+                          <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputZipCode">Zip/Postal Code * :</label>
+                          <input type="text" class="form-control" id="inputZipCode">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputPhone">Restarunt Phone : </label>
+                          <input type="tel" class="form-control" id="inputPhone" placeholder="7031235555">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputLinkWebsite">Restarunt Website : </label>
+                          <input type="text" class="form-control" id="inputLinkWebsite" placeholder="Link url">
+                        </div>
+                        <div>
+                          <label class="pr-5 mr-5" for="inputRating">Rating : </label>
+                            <span class="fa fa-star" id="star1" onclick="addStar(this,1)"></span>
+                            <span class="fa fa-star" id="star2" onclick="addStar(this,2)"></span>
+                            <span class="fa fa-star" id="star3" onclick="addStar(this,3)"></span>
+                            <span class="fa fa-star" id="star4" onclick="addStar(this,4)"></span>
+                            <span class="fa fa-star" id="star5" onclick="addStar(this,5)"></span>
+                        </div>
+                        <div class="form-group">
+                            <div class="container bg-white">
+                              <div class="row">
+                                  <div class="col pl-0">
+                                    <label for="uploadPhoto">Share Photo : </label>
+                                  </div>
+                                  <div class="col-8 ml-0" id="photoBox">
+                                    <i class="fa fa-file-image-o" aria-hidden="true"></i>
+                                    <input type="file" class="form-control-file" id="uploadPhoto">
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Save</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
     
             <!--Container Top Weekly-->
             <div class="container-fluid bg-white">
@@ -105,7 +212,7 @@
                                                 <div class="card-body">
                                                   <h5 class="card-title">Card title</h5>
                                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                  <a href="#" class="btn btn-primary">Read more..</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -115,7 +222,7 @@
                                                 <div class="card-body">
                                                   <h5 class="card-title">Card title</h5>
                                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                  <a href="#" class="btn btn-primary">Read more..</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -129,7 +236,7 @@
                                                 <div class="card-body">
                                                   <h5 class="card-title">Card title</h5>
                                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                  <a href="#" class="btn btn-primary">Read more..</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,7 +246,7 @@
                                                 <div class="card-body">
                                                   <h5 class="card-title">Card title</h5>
                                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                  <a href="#" class="btn btn-primary">Read more..</a>
                                                 </div>
                                             </div>
                                         </div>
